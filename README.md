@@ -1,6 +1,6 @@
 # Buddy EasyConfigs
 
-[![GitHub License](https://img.shields.io/github/license/UCO-HPC/buddy_EasyConfigs?style=flat-square)](https://opensource.org/licenses/GPL-3.0)
+[![GitHub License](https://img.shields.io/github/license/UCO-HPC/Buddy_EasyConfigs?style=flat-square)](https://opensource.org/licenses/GPL-3.0)
 
 This is a repository containing UCO Buddy's custom EasyConfigs. 
 
