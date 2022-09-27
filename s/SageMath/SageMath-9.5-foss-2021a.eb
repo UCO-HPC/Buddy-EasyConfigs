@@ -1,0 +1,28 @@
+easyblock = 'ConfigureMake'
+
+name = 'SageMath'
+version = '9.5'
+
+homepage = 'http://www.sagemath.org/'
+description = """SageMath is a free open-source mathematics software system licensed under the GPL. It builds on top of many existing open-source packages: NumPy, SciPy, matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined power through a common, Python-based language or directly via interfaces or wrappers."""
+
+toolchain = {'name': 'foss', 'version': '2021a'}
+toolchainopts = {'pic': True}
+
+source_urls = ['http://www.cecm.sfu.ca/sage/src/']
+sources = ['sage-%(version)s.tar.gz']
+checksums = ['d34f957407a349fdef8bea1cb80145edfecc3a6f1cf84f99df7ac102d0eee4e7']
+
+buildininstalldir = True
+
+sanity_check_paths = {
+    'files': ['sage-%(version)s/local/bin/sage'],
+    'dirs': ['sage-%(version)s/local'],
+}
+
+modextrapaths = {'PATH': 'sage-%(version)s'}
+
+modextravars = {'SAGE_ROOT': '%(installdir)s/sage-%(version)s'}
+
+moduleclass = 'math'
+

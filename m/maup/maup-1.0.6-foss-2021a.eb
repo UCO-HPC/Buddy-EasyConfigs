@@ -1,0 +1,26 @@
+easyblock = 'PythonPackage'
+
+name = 'maup'
+version = '1.0.6'
+
+homepage = 'https://pypi.org/project/maup/'
+description = """maup is the geospatial toolkit for redistricting data. The package streamlines the basic workflows that arise when working with blocks, precincts, and districts."""
+
+toolchain = {'name': 'foss', 'version': '2021a'}
+
+sources = [SOURCE_TAR_GZ]
+checksums = ['e0eaaa9e2e8b5550f2bab8a10590734fb67de520efc5501232d1d06b6862cc55']
+
+dependencies = [
+    ('Python', '3.9.5'),
+    ('geopandas', '0.10.2'),
+    ('tqdm', '4.61.2')
+]
+
+use_pip = True
+download_dep_fail = True
+sanity_pip_check = True
+
+options = {'modulename': 'maup'}
+
+moduleclass = 'data'
