@@ -1,0 +1,24 @@
+easyblock = 'PythonPackage'
+
+name = 'jupyter_c_kernel'
+version = '1.2.2'
+versionsuffix = '-Python-%(pyver)s'
+
+homepage = 'https://pypi.org/project/jupyter_c_kernel/'
+description = "Minimalistic C kernel for Jupyter"
+
+toolchain = {'name': 'foss', 'version': '2021a'}
+
+builddependencies = [
+    ('Python', '3.9.5'),
+]
+
+dependencies = [
+    ('Python', '3.9.5'),
+]
+
+use_pip = True
+
+sanity_pip_check = False
+
+moduleclass = 'devel'
